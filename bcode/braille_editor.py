@@ -502,19 +502,19 @@ class BrailleEditor(QMainWindow):
         spacer.setSizePolicy(QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Preferred)
         tb.addWidget(spacer)
 
-        open_act = QAction("📂 Open", self)
+        open_act = QAction("Open", self)
         open_act.triggered.connect(self._open_file)
         tb.addAction(open_act)
 
-        save_act = QAction("💾 Save Text", self)
+        save_act = QAction("Save Text", self)
         save_act.triggered.connect(self._save_text)
         tb.addAction(save_act)
 
-        export_braille_act = QAction("⬇ Export Braille", self)
+        export_braille_act = QAction("Export Braille", self)
         export_braille_act.triggered.connect(self._export_braille)
         tb.addAction(export_braille_act)
 
-        export_gcode_act = QAction("⬇ Export G-code", self)
+        export_gcode_act = QAction("Export G-code", self)
         export_gcode_act.triggered.connect(self._export_gcode)
         tb.addAction(export_gcode_act)
 
@@ -536,7 +536,7 @@ class BrailleEditor(QMainWindow):
         left_layout.setContentsMargins(0, 0, 0, 0)
         left_layout.setSpacing(0)
 
-        hdr_in = QLabel("  ◈  PLAIN TEXT INPUT")
+        hdr_in = QLabel("PLAIN TEXT INPUT")
         hdr_in.setObjectName("panelHeader")
         left_layout.addWidget(hdr_in)
 
