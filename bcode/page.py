@@ -13,9 +13,11 @@ class Page:
             raise ValueError('Invalid orientation')
         else:
             if orientation == 'portrait':
-                self._width, self._height = dims
+                self._width = dims['width']
+                self._height = dims['height']
             elif orientation == 'landscape':
-                self._width, self._height = dims[1], dims[0]
+                self._width = dims['height']
+                self._height = dims['width']
 
         self._margins = (10, 10, 10, 10) # top, right, bottom, left
 
@@ -30,6 +32,7 @@ class Page:
 
 
     def write(self):
+        pass
 
     @property
     def margins(self):
