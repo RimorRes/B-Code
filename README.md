@@ -1,4 +1,4 @@
-![B-Code](data/B-Code_Banner.png)
+![B-Code](https://github.com/RimorRes/B-Code/blob/main/data/B-Code_Banner.png?raw=true)
 
 # B-Code
 Work in progress - bug reports are welcome.
